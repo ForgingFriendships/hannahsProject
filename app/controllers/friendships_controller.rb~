@@ -1,0 +1,4 @@
+class FriendshipsController < ApplicationController
+  def program
+  end
+end
