@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
 
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="~/Documents/forgingfriendships/bootstrap-3.3.2-dist/css/bootstrap.css">
@@ -9,13 +9,16 @@
   <script src="~/Documents/forgingfriendships/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
 
 
-  <title>Forging Friendships</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <title>Our Inspiration</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+
+
 <body>
-<div id="main-container" class="container">
+  <div id="main-container" class="container">
     <div class="row">
       <div class="col-xs-3">
         <h3>Forging Friendships</h3>
@@ -26,8 +29,5 @@
       </div>
     </div>
   </div> 
-
-<%#= yield %>
-
 </body>
 </html>

@@ -1,4 +1,8 @@
 Forging::Application.routes.draw do
+  get "inspiration/zachary"
+
+  get "inspiration/hannah"
+
   get "home_page/index"
 
   get "friendships/events"
