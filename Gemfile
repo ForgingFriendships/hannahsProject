@@ -10,6 +10,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :production do
+  gem 'pg'
+end
+
 # Gems for bootstrap integration.
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
