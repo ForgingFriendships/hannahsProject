@@ -1,0 +1,4 @@
+class InspirationController < ApplicationController
+  def hannah
+  end
+end

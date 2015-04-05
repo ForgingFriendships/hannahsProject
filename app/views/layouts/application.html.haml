@@ -1,0 +1,67 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+        %link{:href => "~/Documents/forgingfriendships/bootstrap-3.3.2-dist/css/bootstrap.css", :rel => "stylesheet"}
+          %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+          %script{:src => "~/Documents/forgingfriendships/bootstrap-3.3.2-dist/js/bootstrap.js"}
+          %title Forging Friendships
+          = stylesheet_link_tag    "application", :media => "all"
+          = javascript_include_tag "application"
+          = csrf_meta_tags
+  %body
+    %p hrhr
+    %p
+    %p
+    %p dd
+    %p
+    %p dd
+    %p
+    %p dd
+    %p
+    %p dd
+    %p
+    %p
+
+    
+    #login
+  - if @current_user
+    %p.welcome  Welcome, #{@current_user.name}!
+    = link_to 'Log Out', logout_path
+  - else
+    %p.login= link_to 'Log in with your Twitter account', '/auth/twitter'
+    %p.login= link_to 'Log in with your Facebook account', '/auth/facebook'
+    %p.login= link_to 'Log in with your Google account', '/auth/google_oauth2'
+    /
+      Main Navigation
+      \==================================================
+    %nav#tf-menu.navbar.navbar-default.navbar-fixed-top
+      .container
+        / Brand and toggle get grouped for better mobile display
+        .navbar-header
+          %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href => "#"}
+            %img{:alt => "...", :src => "img/logo.png"}/
+        / Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a.scroll{:href => "#tf-home"} Homepage
+            %li
+              %a.scroll{:href => "#tf-services"} Friendship
+            %li
+              %a.scroll{:href => "#tf-about"} Our Story
+            %li
+              %a.scroll{:href => "#tf-works"} Our Inspiration
+            %li
+              %a.scroll{:href => "#tf-process"} Donate
+            %li
+              %a.scroll{:href => "#tf-contact"} Contact
+        / /.navbar-collapse
+      / /.container-fluid
+    = yield
