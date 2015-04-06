@@ -10,21 +10,7 @@
           = stylesheet_link_tag    "application", :media => "all"
           = javascript_include_tag "application"
           = csrf_meta_tags
-  %body
-    %p hrhr
-    %p
-    %p
-    %p dd
-    %p
-    %p dd
-    %p
-    %p dd
-    %p
-    %p dd
-    %p
-    %p
-
-    
+  %body    
     #login
   - if @current_user
     %p.welcome  Welcome, #{@current_user.name}!

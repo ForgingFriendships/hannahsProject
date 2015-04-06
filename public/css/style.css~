@@ -5,6 +5,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     overflow-y: auto;
     overflow-x: hidden;
+    padding: 100px;
     font-family: 'Lato', sans-serif;
     color: #6f6f6f;
 }
@@ -33,9 +34,9 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #ffcc33;
+    color: #bf2026;
 }
-.highlight { color: #ffcc33 }
+.highlight { color: #bf2026 }
 .clearfix:after {
     visibility: hidden;
     display: block;
