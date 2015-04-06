@@ -48,20 +48,46 @@
           %a.navbar-brand{:href => "#"}
             %img{:alt => "...", :src => "img/logo.png"}/
         / Collect the nav links, forms, and other content for toggling
+
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
+
             %li
-              %a.scroll{:href => "#tf-home"} Homepage
+              %a.scroll{:href => "#"} Home
+
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                Friendships
+                %span.caret
+                  %ul.dropdown-menu{:role => "menu"}
+                    %li
+                      %a{:href => "#"} Programs
+                    %li
+                      %a{:href => "#"} Events
+
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                Our Story
+                %span.caret
+                  %ul.dropdown-menu{:role => "menu"}
+                    %li
+                      %a{:href => "#"} Founders
+                    %li
+                      %a{:href => "#"} Next Steps
+
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                Our Inspiration
+                %span.caret
+                  %ul.dropdown-menu{:role => "menu"}
+                    %li
+                      %a{:href => "#"} Hannah
+                    %li
+                      %a{:href => "#"} Zac
             %li
-              %a.scroll{:href => "#tf-services"} Friendship
+              %a.scroll{:href => "#"} Donate
             %li
-              %a.scroll{:href => "#tf-about"} Our Story
-            %li
-              %a.scroll{:href => "#tf-works"} Our Inspiration
-            %li
-              %a.scroll{:href => "#tf-process"} Donate
-            %li
-              %a.scroll{:href => "#tf-contact"} Contact
+              %a.scroll{:href => "#"} Sign-Up
         / /.navbar-collapse
       / /.container-fluid
     = yield
