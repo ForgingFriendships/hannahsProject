@@ -50,18 +50,40 @@
         / Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
+            
             %li
-              %a.scroll{:href => "#tf-home"} Homepage
+              %a.scroll{:href => "#tf-home"} Home
+              
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"} 
+                Friendship
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a.scroll{:href => "#tf-services"} Programs
+                %li
+                  %a.scroll{:href => "#tf-services"} Events
+            %li.dropdown/
             %li
-              %a.scroll{:href => "#tf-services"} Friendship
-            %li
-              %a.scroll{:href => "#tf-about"} Our Story
-            %li
-              %a.scroll{:href => "#tf-works"} Our Inspiration
+              %a.scroll{:href => "#tf-about"} Our Story            
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"} 
+                Our Inspiration
+                %span.caret
+              %ul.dropdown-menu{:role => "menu"}
+                %li
+                  %a.scroll{:href => "#tf-works"} Hannah
+                %li
+                  %a.scroll{:href => "#tf-works"} Zac
+            %li.dropdown/
+            
             %li
               %a.scroll{:href => "#tf-process"} Donate
             %li
               %a.scroll{:href => "#tf-contact"} Contact
+            %li
+              %a.scroll{:href => "#tf-home"} Sign-In
+        / /.navbar-collapse
         / /.navbar-collapse
       / /.container-fluid
     = yield
