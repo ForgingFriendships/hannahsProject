@@ -10,33 +10,14 @@
           = stylesheet_link_tag    "application", :media => "all"
           = javascript_include_tag "application"
           = csrf_meta_tags
-  %body
-    %p hrhr
-    %p
-    %p
-    %p dd
-    %p
-    %p dd
-    %p
-    %p dd
-    %p
-    %p dd
-    %p
-    %p
-
-    
-    #login
-  - if @current_user
-    %p.welcome  Welcome, #{@current_user.name}!
-    = link_to 'Log Out', logout_path
-  - else
-    %p.login= link_to 'Log in with your Twitter account', '/auth/twitter'
-    %p.login= link_to 'Log in with your Facebook account', '/auth/facebook'
-    %p.login= link_to 'Log in with your Google account', '/auth/google_oauth2'
+  %body    
     /
       Main Navigation
       \==================================================
     %nav#tf-menu.navbar.navbar-default.navbar-fixed-top
+      - if @current_user
+        %p.welcome  Welcome, #{@current_user.name}!
+        = link_to 'Log Out', logout_path
       .container
         / Brand and toggle get grouped for better mobile display
         .navbar-header
@@ -86,8 +67,28 @@
                       %a{:href => "#"} Zac
             %li
               %a.scroll{:href => "#"} Donate
-            %li
-              %a.scroll{:href => "#"} Sign-Up
+            - if !(@current_user)
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                  Sign-Up/Login
+                  %span.caret
+                    %ul.dropdown-menu{:role => "menu"}
+                      %li
+                        %a{:href => "/auth/twitter"} Via Twitter
+                      %li
+                        %a{:href => "/auth/facebook"} Via Facebook
+                      %li
+                        %a{:href => "/auth/google_oauth2"} Via Google
         / /.navbar-collapse
       / /.container-fluid
+    Testing
     = yield
+
+    #login
+  - if @current_user
+    %p.welcome  Welcome, #{@current_user.name}!
+    = link_to 'Log Out', logout_path
+  - else
+    %p.login= link_to 'Log in with your Twitter account', '/auth/twitter'
+    %p.login= link_to 'Log in with your Facebook account', '/auth/facebook'
+    %p.login= link_to 'Log in with your Google account', '/auth/google_oauth2'
