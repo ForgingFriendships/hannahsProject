@@ -34,7 +34,7 @@
     %p.login= link_to 'Log in with your Facebook account', '/auth/facebook'
     %p.login= link_to 'Log in with your Google account', '/auth/google_oauth2'
     /
-     Main Navigation
+      Main Navigation
       \==================================================
     %nav#tf-menu.navbar.navbar-default.navbar-fixed-top
       .container
