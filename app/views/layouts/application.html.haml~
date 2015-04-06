@@ -11,8 +11,6 @@
           = javascript_include_tag "application"
           = csrf_meta_tags
   %body
-<<<<<<< HEAD
-=======
     %p hrhr
     %p
     %p
@@ -27,7 +25,6 @@
     %p
 
     
->>>>>>> f9e3116146d96ed9dc2df8ee92ff45aad8f52179
     #login
   - if @current_user
     %p.welcome  Welcome, #{@current_user.name}!
@@ -37,7 +34,7 @@
     %p.login= link_to 'Log in with your Facebook account', '/auth/facebook'
     %p.login= link_to 'Log in with your Google account', '/auth/google_oauth2'
     /
-      Main Navigation
+     Main Navigation
       \==================================================
     %nav#tf-menu.navbar.navbar-default.navbar-fixed-top
       .container
@@ -51,7 +48,6 @@
           %a.navbar-brand{:href => "#"}
             %img{:alt => "...", :src => "img/logo.png"}/
         / Collect the nav links, forms, and other content for toggling
-<<<<<<< HEAD
 
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
@@ -95,22 +91,3 @@
         / /.navbar-collapse
       / /.container-fluid
     = yield
-=======
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          %ul.nav.navbar-nav.navbar-right
-            %li
-              %a.scroll{:href => "#tf-home"} Homepage
-            %li
-              %a.scroll{:href => "#tf-services"} Friendship
-            %li
-              %a.scroll{:href => "#tf-about"} Our Story
-            %li
-              %a.scroll{:href => "#tf-works"} Our Inspiration
-            %li
-              %a.scroll{:href => "#tf-process"} Donate
-            %li
-              %a.scroll{:href => "#tf-contact"} Contact
-        / /.navbar-collapse
-      / /.container-fluid
-    = yield
->>>>>>> f9e3116146d96ed9dc2df8ee92ff45aad8f52179
