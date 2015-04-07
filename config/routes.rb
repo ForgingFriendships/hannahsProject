@@ -5,9 +5,9 @@ Forging::Application.routes.draw do
   match '/blog', :to => 'home_page#blog'
   
 
-  get 'auth/:provider/callback' => 'sessions#create'
-  post 'logout' => 'sessions#destroy'
-  get 'auth/failure' => 'sessions#failure'
+  get 'auth/:provider/callback' => 'sessions#create', :as => 'login'
+  match '/signout' => 'sessions#destroy', :as => :signout
+  #match 'auth/failure' => redirect('/')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
