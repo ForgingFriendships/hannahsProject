@@ -3,10 +3,10 @@ Forging::Application.routes.draw do
   root to: 'home_page#index'
 
   match '/blog', :to => 'home_page#blog'
-  
+
 
   get 'auth/:provider/callback' => 'sessions#create', :as => 'login'
-  post 'logout' => 'sessions#destroy'
+  get 'logout' => 'sessions#destroy'
   get 'auth/failure' => 'sessions#failure'
 
   # The priority is based upon order of creation:
