@@ -84,6 +84,14 @@
                         %a{:href => "/auth/facebook"} Via Facebook
                       %li
                         %a{:href => "/auth/google_oauth2"} Via Google
+            - else
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                  = (@current_user.name)
+                  %span.caret
+                    %ul.dropdown-menu{:role => "menu"}
+                      %li
+                        %a{:href => "/logout"} Logout...
         / /.navbar-collapse
       / /.container-fluid
     = yield

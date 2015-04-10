@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   # user shouldn't have to be logged in before logging in!
-  skip_before_filter :set_current_user
+  skip_before_filter :set_current_user, :block_page_if_not_signed_in
   def new
     @user = User.new
   end
