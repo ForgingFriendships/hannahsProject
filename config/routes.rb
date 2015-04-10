@@ -6,8 +6,8 @@ Forging::Application.routes.draw do
   
 
   get 'auth/:provider/callback' => 'sessions#create', :as => 'login'
-  match '/signout' => 'sessions#destroy', :as => :signout
-  #match 'auth/failure' => redirect('/')
+  post 'logout' => 'sessions#destroy'
+  get 'auth/failure' => 'sessions#failure'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
