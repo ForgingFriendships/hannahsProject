@@ -5,7 +5,6 @@ html {
     -moz-osx-font-smoothing: grayscale;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 100px;
     font-family: 'Lato', sans-serif;
     color: #6f6f6f;
 }

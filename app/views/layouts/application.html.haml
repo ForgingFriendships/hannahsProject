@@ -34,7 +34,7 @@
           %ul.nav.navbar-nav.navbar-right
 
             %li
-              %a.scroll{:href => "#"} Home
+              %a.scroll{:href => "#tf-home"} Home
 
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -42,9 +42,10 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "#"} Programs
+                      %a.scroll{:href => "#tf-services"} Programs
                     %li
-                      %a{:href => "#"} Events
+                      %a.scroll{:href => "#tf-services"} Events
+            %li.dropdown/
 
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -52,9 +53,10 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "#"} Founders
+                      %a.scroll{:href => "#tf-about"} Founders
                     %li
-                      %a{:href => "#"} Next Steps
+                      %a.scroll{:href => "#tf-about"} Next Steps
+            %li.dropdown/
 
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -62,11 +64,14 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "#"} Hannah
+                      %a.scroll{:href => "#tf-works"} Hannah
                     %li
-                      %a{:href => "#"} Zac
+                      %a.scroll{:href => "#tf-works"} Zac
+            %li.dropdown/
+            
             %li
-              %a.scroll{:href => "#"} Donate
+              %a.scroll{:href => "#tf-process"} Donate
+              
             - if !(@current_user)
               %li.dropdown
                 %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
