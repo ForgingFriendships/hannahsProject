@@ -3,11 +3,11 @@ Forging::Application.routes.draw do
   root to: 'home_page#index'
 
   match '/blog', :to => 'home_page#blog'
-<<<<<<< HEAD
-  match '/contact', :to => 'home_page#contact'
-=======
 
->>>>>>> origin
+  match '/contact', :to => 'home_page#contact'
+
+
+
 
   get 'auth/:provider/callback' => 'sessions#create', :as => 'login'
   get 'logout' => 'sessions#destroy'
