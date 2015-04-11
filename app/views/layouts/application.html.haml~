@@ -35,7 +35,11 @@
           %ul.nav.navbar-nav.navbar-right
 
             %li
+<<<<<<< HEAD
               %a.scroll{:href => ""} Home
+=======
+              %a.scroll{:href => "#tf-home"} Home
+>>>>>>> origin
 
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -43,9 +47,10 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "#"} Programs
+                      %a.scroll{:href => "#tf-events"} Programs
                     %li
-                      %a{:href => "#"} Events
+                      %a.scroll{:href => "#tf-events"} Events
+            %li.dropdown/
 
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -53,9 +58,10 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "#"} Founders
+                      %a.scroll{:href => "#tf-team"} Founders
                     %li
-                      %a{:href => "#"} Next Steps
+                      %a.scroll{:href => "#tf-team"} Next Steps
+            %li.dropdown/
 
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -63,11 +69,14 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "#"} Hannah
+                      %a.scroll{:href => "#tf-inspiration"} Hannah
                     %li
-                      %a{:href => "#"} Zac
+                      %a.scroll{:href => "#tf-inspiration"} Zac
+            %li.dropdown/
+            
             %li
-              %a.scroll{:href => "#"} Donate
+              %a.scroll{:href => "#tf-process"} Donate
+              
             - if !(@current_user)
               %li.dropdown
                 %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -80,9 +89,20 @@
                         %a{:href => "/auth/facebook"} Via Facebook
                       %li
                         %a{:href => "/auth/google_oauth2"} Via Google
+<<<<<<< HEAD
             %li
               %a.scroll{:href => "/contact"} Contact
 
+=======
+            - else
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                  = (@current_user.name)
+                  %span.caret
+                    %ul.dropdown-menu{:role => "menu"}
+                      %li
+                        %a{:href => "/logout"} Logout...
+>>>>>>> origin
         / /.navbar-collapse
       / /.container-fluid
     = yield

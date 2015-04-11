@@ -3,11 +3,15 @@ Forging::Application.routes.draw do
   root to: 'home_page#index'
 
   match '/blog', :to => 'home_page#blog'
+<<<<<<< HEAD
   match '/contact', :to => 'home_page#contact'
+=======
+
+>>>>>>> origin
 
   get 'auth/:provider/callback' => 'sessions#create', :as => 'login'
-  match '/signout' => 'sessions#destroy', :as => :signout
-  #match 'auth/failure' => redirect('/')
+  get 'logout' => 'sessions#destroy'
+  get 'auth/failure' => 'sessions#failure'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
