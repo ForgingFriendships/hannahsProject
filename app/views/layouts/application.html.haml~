@@ -37,14 +37,14 @@
               %a.scroll{:href => "#tf-home"} Home
 
             %li.dropdown
-              %a.hover{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
                 Friendships
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a.scroll{:href => "#tf-services"} Programs
+                      %a.scroll{:href => "#tf-events"} Programs
                     %li
-                      %a.scroll{:href => "#tf-services"} Events
+                      %a.scroll{:href => "#tf-events"} Events
             %li.dropdown/
 
             %li.dropdown
@@ -53,9 +53,9 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a.scroll{:href => "#tf-about"} Founders
+                      %a.scroll{:href => "#tf-team"} Founders
                     %li
-                      %a.scroll{:href => "#tf-about"} Next Steps
+                      %a.scroll{:href => "#tf-team"} Next Steps
             %li.dropdown/
 
             %li.dropdown
@@ -64,9 +64,9 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a.scroll{:href => "#tf-works"} Hannah
+                      %a.scroll{:href => "#tf-inspiration"} Hannah
                     %li
-                      %a.scroll{:href => "#tf-works"} Zac
+                      %a.scroll{:href => "#tf-inspiration"} Zac
             %li.dropdown/
             
             %li
@@ -84,6 +84,14 @@
                         %a{:href => "/auth/facebook"} Via Facebook
                       %li
                         %a{:href => "/auth/google_oauth2"} Via Google
+            - else
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                  = (@current_user.name)
+                  %span.caret
+                    %ul.dropdown-menu{:role => "menu"}
+                      %li
+                        %a{:href => "/logout"} Logout...
         / /.navbar-collapse
       / /.container-fluid
     = yield
