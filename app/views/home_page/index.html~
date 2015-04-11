@@ -58,8 +58,8 @@
         <div class="overlay"> <!-- Overlay Color -->
             <div class="container"> <!-- container -->
                 <div class="content-heading text-center"> <!-- Input Your Home Content Here -->
-                    <h1>Websites / Branding / Interactive</h1>
-                    <p class="lead">We create beautiful, innovative and  effective handcrafted brands & website.</p>
+                    <h1>Forging Friendships Between Traditional & Special-Needs Children</h1>
+                    <p class="lead">We create and empower children to learn and love.</p>
                     <a href="#tf-works" class="scroll goto-btn text-uppercase">View Our Works</a> <!-- Link to your portfolio section -->
                 </div><!-- End Input Your Home Content Here -->
             </div> <!-- end container -->
@@ -74,25 +74,65 @@
 
                 <div class="col-md-8 col-md-offset-2"> 
                     <img src="img/logo-w.png" class="intro-logo img-responsive" alt="free-template"> <!-- Your company logo in white -->
-                    <p>	WHERE HOME PAGE CONTENT GOES</p>
+                    <a href="#tf-works" class="scroll goto-btn text-uppercase">WHERE HOME PAGE CONTENT GOES</a>
                 </div>
                 
             </div><!-- end row -->
         </div><!-- end container -->
     </div>
 
-    <!-- Service Section
+    <!-- Events Section
     ================================================== -->
-    <div id="tf-services">
-        <div class="container"> <!-- container -->
-
+    <div id="tf-events">
+        <div class="container">
             <div class="section-header">
-                <h2>We are making friendships <span class="highlight"><strong>Pretty</strong></span></h2>
-                <h5><em>We design and build functional and beautiful websites</em></h5>
+                <h2>Our Events build <span class="highlight"><strong>Relationships</strong></span></h2>
+                <h5><em>We host events for children to bond with each other.</em></h5>
                 <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
             </div>
 
-            <div class="row"> <!-- row -->
+        </div><!-- End Container -->
+
+        <div class="container-fluid"> <!-- fluid container -->
+            <div id="events" class="row">
+               <div class="col-sm-6 col-md-4"> <!-- event #1 -->
+                  <div class="thumbnail">
+                     <img src="img/portfolio/san-franc.jpg" alt="..."> <!-- event #1 picture -->
+                     <div class="caption">
+                        <h3>Leadership Training in San Franciso</h3>
+                        <p>Jan 31st, 2015. Come join us for our first leadership training!</p>
+                        <p><a href="..." class="btn btn-primary" role="button">Register!</a> <a href="#" class="btn btn-default" role="button">Volunteer!</a></p>
+                     </div>
+                  </div>
+               </div>
+
+	       <div class="col-sm-6 col-md-4"> <!-- event #2 -->
+                  <div class="thumbnail">
+                     <img src="img/portfolio/oakland.jpg" alt="..."><!-- event #2 picture -->
+                     <div class="caption">
+                        <h3>Parent Meeting in Oakland</h3>
+                        <p>Calling all interested parents!</p>
+                        <p><a href="..." class="btn btn-primary" role="button">Register!</a> <a href="#" class="btn btn-default" role="button">Volunteer!</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div> <!-- End Container-Fluid -->
+    </div>            
+
+ <!-- Inspiration ================================================== -->
+ <div id="tf-inspiration">
+    <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="highlight"><strong>Inspiration</strong></span></h2>
+                <h5><em>They changed our lives with a smile.</em></h5>
+                <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
+            </div>
+
+    </div><!-- End Container -->
+    <div class="container">
+	<div class="row"> <!-- row -->
+       
                 
                 <div class="col-md-6 text-right">  <!-- Left Content Col 6 -->
                     <div class="media service"> <!-- Service #1 -->
@@ -136,151 +176,6 @@ The inspiration behind Forging Friendships is Zac and Hannah’s uncommon kindne
         </div><!-- end container -->
     </div>
 
-    <!-- About Us Section
-    ================================================== -->
-    <div id="tf-about">
-        <div class="container"> <!-- container -->
-            <div class="section-header">
-                <h2>What To Know Us <span class="highlight"><strong>Better</strong></span></h2>
-                <h5><em>We design and build functional and beautiful websites</em></h5>
-                <div class="fancy"><span><img src="img/favicon.ico" alt="..."></span></div>
-            </div>
-        </div><!-- end container -->
-
-        <div class="gray-bg"> <!-- fullwidth gray background -->
-
-            <div class="container"><!-- container -->
-                <div class="row"> <!-- row -->
-
-                    <div class="col-md-6"> <!-- left content col 6 -->
-                        <div class="about-left-content text-center">
-                            <div class="img-wrap"> <!-- profile image wrap -->
-                                <div class="profile-img"> <!-- company profile details -->
-                                    <img src="http://placehold.it/800x650" class="img-responsive" alt="Image"> <!-- change link to your image for your company profile -->
-                                    <ul class="list-inline social"> 
-                                        <li><a href="#" class="fa fa-facebook"></a></li> <!-- facebook link here -->
-                                        <li><a href="#" class="fa fa-twitter"></a></li> <!-- twitter link here -->
-                                        <li><a href="#" class="fa fa-google-plus"></a></li> <!-- google plus link here -->
-                                    </ul>
-                                </div>
-                            </div><!-- end profile image wrap -->
-                            <h2><span class="small">Developing</span> Amazing Things <br><span class="small">with Passion since 2012.</span></h2>
-                        </div>
-                    </div><!-- end left content col 6 -->
-
-                    <div class="col-md-6"><!-- right content col 6 -->
-                        <div class="about-right-content"> <!-- right content wrapper -->
-
-                            <h4><strong>Professional Profile</strong></h4>
-                            <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
-                            
-                            <div class="skills"> <!-- skills progress bar -->
-                                <div class="skillset"> <!-- skill #1 -->
-                                    <p>UI/UX Design</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                            <span class="sr-only">90% Complete</span>
-                                        </div>
-                                    </div>
-                                </div><!-- end skill #1 -->
-
-                                <div class="skillset"> <!-- skill #2 -->
-                                    <p>HTML5, CSS3, SASS</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-                                            <span class="sr-only">85% Complete</span>
-                                        </div>
-                                    </div>
-                                </div><!-- end skill #2 -->
-
-                                <div class="skillset"> <!-- skill #3 -->
-                                    <p>WordPress</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%;">
-                                            <span class="sr-only">99% Complete</span>
-                                        </div>
-                                    </div>
-                                </div> <!-- end skill #3 -->
-
-                                <div class="skillset"> <!-- skill #4 -->
-                                    <p>Graphic Design</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                            <span class="sr-only">70% Complete</span>
-                                        </div>
-                                    </div>
-                                </div> <!-- end skill #4 -->
-
-                                <div class="skillset"> <!-- skill #5 -->
-                                    <p>Marketing</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                            <span class="sr-only">50% Complete</span>
-                                        </div>
-                                    </div>
-                                </div><!-- end skill #4 -->
-                            </div> <!-- end skills progress bar -->
-
-                        </div><!-- end right content wrapper -->
-                    </div><!-- end right content col 6 -->
-
-                </div> <!-- end row -->
-            </div><!-- end container -->
-
-            <div id="tf-counter" class="text-center">
-                <div class="container">
-                    <div class="row"> <!-- Row -->
-
-                        <div class="counter"> 
-
-                          <div class="col-xs-6 col-sm-4 col-md-2 col-md-2 col-md-offset-1 facts"><!-- counter #1 -->
-                            <div class="count-box"> 
-                                <i class="fa fa-thumbs-up"></i>
-                                <h4 class="count">720</h4>
-                                <p class="small">Happy Customers</p>
-                            </div> 
-                          </div><!-- end counter #1 -->
-
-                          <div class="col-xs-6 col-sm-4 col-md-2 facts"><!-- counter #2 -->
-                            <div class="count-box">
-                              <i class="fa fa-user"></i>
-                              <h4 class="count">480</h4>
-                              <p class="small">People Donated</p>
-                            </div>
-                          </div>
-
-                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #3 -->
-                            <div class="count-box">
-                              <i class="fa fa-desktop"></i>
-                              <h4 class="count">1253</h4>
-                              <p class="small">People Participated</p>
-                            </div>
-                          </div>
-
-                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #4 -->
-                            <div class="count-box">
-                              <i class="fa fa-dollar"></i>
-                              <h4 class="count">4580</h4>
-                              <p class="small">Donation Collected</p>
-                            </div>
-                          </div>
-
-                          <div class="col-xs-6 col-sm-4 col-md-2 facts"> <!-- counter #5 -->
-                            <div class="count-box last">
-                              <i class="fa fa-line-chart"></i>
-                              <h4 class="count">12853</h4>
-                              <p class="small">Total Hits</p>
-                            </div>
-                          </div>
-
-                        </div>
-
-                      </div> <!-- End Row -->
-                </div>
-            </div>
-
-        </div> <!-- end fullwidth gray background -->
-    </div>
 
     <!-- Team Section
     ================================================== -->
