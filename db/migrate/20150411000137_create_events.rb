@@ -15,7 +15,7 @@ class CreateEvents < ActiveRecord::Migration
     end
   end
   
-  def down
+  def drop_events
     drop_table :events
   end
 
