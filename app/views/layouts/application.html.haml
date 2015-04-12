@@ -26,16 +26,15 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
+            %span.icon-bar
           %a.navbar-brand{:href => "#"}
             %img{:alt => "...", :src => "img/logo-min.png"}/
         / Collect the nav links, forms, and other content for toggling
 
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
-
             %li
               %a.scroll{:href => "#tf-home"} Home
-
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
                 Friendships
@@ -92,6 +91,8 @@
                     %ul.dropdown-menu{:role => "menu"}
                       %li
                         %a{:href => "/logout"} Logout...
+            %li
+              %a.scroll{:href => "/contact"} Contact
         / /.navbar-collapse
       / /.container-fluid
     = yield

@@ -26,6 +26,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
+            %span.icon-bar
           %a.navbar-brand{:href => "#"}
             %img{:alt => "...", :src => "img/logo-min.png"}/
         / Collect the nav links, forms, and other content for toggling
@@ -34,7 +35,11 @@
           %ul.nav.navbar-nav.navbar-right
 
             %li
+<<<<<<< HEAD
+              %a.scroll{:href => "/"} Home
+=======
               %a.scroll{:href => "#tf-home"} Home
+>>>>>>> origin
 
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -84,6 +89,11 @@
                         %a{:href => "/auth/facebook"} Via Facebook
                       %li
                         %a{:href => "/auth/google_oauth2"} Via Google
+<<<<<<< HEAD
+            %li
+              %a.scroll{:href => "/contact"} Contact
+
+=======
             - else
               %li.dropdown
                 %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -92,6 +102,7 @@
                     %ul.dropdown-menu{:role => "menu"}
                       %li
                         %a{:href => "/logout"} Logout...
+>>>>>>> origin
         / /.navbar-collapse
       / /.container-fluid
     = yield
