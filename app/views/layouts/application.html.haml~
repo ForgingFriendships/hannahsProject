@@ -52,9 +52,9 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a.scroll{:href => "#tf-team"} Founders
+                      %a.scroll{:href => "#tf-story"} Founders
                     %li
-                      %a.scroll{:href => "#tf-team"} Next Steps
+                      %a.scroll{:href => "#tf-story"} Next Steps
             %li.dropdown/
 
             %li.dropdown
