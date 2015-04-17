@@ -80,8 +80,10 @@ a:focus {
 .navbar-default .navbar-toggle:hover>.navbar-default .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle:focus>.navbar-default .navbar-toggle .icon-bar { color: #BF2026 }
 
-ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
+@media(min-width:1200px){
+ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; text-align:right; min-width:0px;}
 .nav .dropdown-toggle .caret { display:none; }
+}
 
 
 /* Header Page */
@@ -483,7 +485,7 @@ ul.social li a.fa:hover { background-color: #333333 }
 /* Portfolio / Works Sections */
 #tf-team { padding: 60px 0 }
 #team .item {
-    padding: 60px 0px;
+    padding: 30px 0px;
     margin: 5px 20px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
