@@ -58,7 +58,7 @@ a:focus {
     height: 50px;
     width: auto;
 }
-.navbar-brand { padding: 12px 15px }
+.navbar-brand { padding: 12px 15px; margin-bottom: 20px }
 .navbar-nav > li > a {
     font-size: 13px;
     font-weight: 700;
@@ -84,10 +84,20 @@ a:focus {
 @media(min-width:768px){
 ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; text-align:right; min-width:0px;}
 .nav .dropdown-toggle .caret { display:none; }
+
+.navbar-brand {
+   margin-bottom: 0px;
+}
+
 .navbar-brand img {
     height: 70px;
     width: auto;
 }
+
+nav.shrink {
+  margin-top:0;
+}
+
 nav.shrink a {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -106,7 +116,6 @@ nav.shrink .navbar-toggle {
 nav.shrink .navbar-brand img{
   height:50px;
 }
-
 
 }
 
