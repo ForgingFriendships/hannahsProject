@@ -55,7 +55,7 @@ a:focus {
     height: auto;
 }
 .navbar-brand img {
-    height: 70px;
+    height: 50px;
     width: auto;
 }
 .navbar-brand { padding: 12px 15px }
@@ -80,9 +80,34 @@ a:focus {
 .navbar-default .navbar-toggle:hover>.navbar-default .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle:focus>.navbar-default .navbar-toggle .icon-bar { color: #4DA848 }
 
-@media(min-width:1200px){
+
+@media(min-width:768px){
 ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; text-align:right; min-width:0px;}
 .nav .dropdown-toggle .caret { display:none; }
+.navbar-brand img {
+    height: 70px;
+    width: auto;
+}
+nav.shrink a {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  font-size: 12px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 15px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 0px 8px 0;
+}
+
+nav.shrink .navbar-brand img{
+  height:50px;
+}
+
+
 }
 
 
