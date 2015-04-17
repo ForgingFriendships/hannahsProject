@@ -5,11 +5,10 @@ Forging::Application.routes.draw do
   root to: 'home_page#index'
 
   match '/blog', :to => 'home_page#blog'
-
   match '/contact', :to => 'home_page#contact'
-
-
-
+  match '/program', :to => 'home_page#program'
+  match '/home', :to => 'home_page#home'
+  match '/index', :to => 'home_page#index'
 
   get 'auth/:provider/callback' => 'sessions#create', :as => 'login'
   get 'logout' => 'sessions#destroy'
