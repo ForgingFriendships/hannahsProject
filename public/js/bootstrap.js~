@@ -902,14 +902,13 @@ if (typeof jQuery === 'undefined') {
 
 
 
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 500) {
-        $('.navbar').addClass('shrink');
-    }
-    else {
-        $('.navbar').removeClass('shrink');
-    }
-},false);
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('.navbar').addClass('shrink');
+  } else {
+    $('.navbar').removeClass('shrink');
+  }
+}, false);
 
 /* ========================================================================
  * Bootstrap: modal.js v3.3.2

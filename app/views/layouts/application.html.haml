@@ -26,16 +26,13 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{:href => "#"}
+            %span.icon-bar
+          %a.navbar-brand{:href => "#tf-home"}
             %img{:alt => "...", :src => "img/logo-min.png"}/
         / Collect the nav links, forms, and other content for toggling
 
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
-
-            %li
-              %a.scroll{:href => "#tf-home"} Home
-
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
                 Friendships
@@ -53,9 +50,9 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a.scroll{:href => "#tf-team"} Founders
+                      %a.scroll{:href => "#tf-story"} Founders
                     %li
-                      %a.scroll{:href => "#tf-team"} Next Steps
+                      %a.scroll{:href => "#tf-story"} Next Steps
             %li.dropdown/
 
             %li.dropdown
@@ -92,6 +89,12 @@
                     %ul.dropdown-menu{:role => "menu"}
                       %li
                         %a{:href => "/logout"} Logout...
+            %li
+              %a.scroll{:href => "/contact"} Contact
         / /.navbar-collapse
       / /.container-fluid
+<<<<<<< HEAD
     = yield
+=======
+    = yield
+>>>>>>> 55c5bac9a689bf38be0ae8d843762cc5eeadd986
