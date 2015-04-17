@@ -900,6 +900,17 @@ if (typeof jQuery === 'undefined') {
 
 }(jQuery);
 
+
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 500) {
+        $('.navbar').addClass('shrink');
+    }
+    else {
+        $('.navbar').removeClass('shrink');
+    }
+},false);
+
 /* ========================================================================
  * Bootstrap: modal.js v3.3.2
  * http://getbootstrap.com/javascript/#modals
