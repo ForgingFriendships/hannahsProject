@@ -1,5 +1,7 @@
 Forging::Application.routes.draw do
 
+  resources :events
+
   root to: 'home_page#index'
 
   match '/blog', :to => 'home_page#blog'
