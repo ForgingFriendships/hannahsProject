@@ -57,9 +57,8 @@ a:focus {
 .navbar-brand img {
     height: 50px;
     width: auto;
-    padding:0;
 }
-.navbar-brand { padding: 12px 15px }
+.navbar-brand { padding: 12px 15px; margin-bottom: 20px }
 .navbar-nav > li > a {
     font-size: 13px;
     font-weight: 700;
@@ -85,6 +84,11 @@ a:focus {
 @media(min-width:768px){
 ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; text-align:right; min-width:0px;}
 .nav .dropdown-toggle .caret { display:none; }
+
+.navbar-brand {
+   margin-bottom: 0px;
+}
+
 .navbar-brand img {
     height: 70px;
     width: auto;
