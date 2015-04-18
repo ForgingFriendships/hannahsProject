@@ -13,12 +13,13 @@ class EventsController < ApplicationController
 
   def new
     # default: render 'new' template
+    @events = Event.all
   end
 
   def create
     @event = Event.create!(params[:event])
     flash[:notice] = "#{@event.event_name} was successfully created."
-    redirect_to event_path
+    redirect_to events_path
   end
 
   def edit
@@ -28,15 +29,15 @@ class EventsController < ApplicationController
   def update
     @event = Event.find params[:id]
     @event.update_attributes!(params[:event])
-    flash[:notice] = "#{@movie.event_name} was successfully updated."
-    redirect_to event_path(@event)
+    flash[:notice] = "#{@event.event_name} was successfully updated."
+    redirect_to events_path(@event)
   end
 
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
-    flash[:notice] = "Movie '#{@movie.event_path}' deleted."
-    redirect_to event_path
+    flash[:notice] = "Movie '#{@event.event_path}' deleted."
+    redirect_to events_path
   end
 
 end
