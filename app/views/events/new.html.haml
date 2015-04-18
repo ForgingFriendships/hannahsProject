@@ -58,31 +58,7 @@
       .container
         / container
         .section-header
-          %h2
-            All Events
 
-        %table#events
-          %thead
-            %tr
-              %th Event Name
-              %th Description
-              %th Host
-              %th Start Time
-              %th End Time
-              %th Venue
-              %th Address
-          %tbody
-            - @events.each do |event|
-              %tr
-                %td= event.event_name 
-                %td= event.description
-                %td= event.host
-                %td= event.start_date_time
-                %td= event.end_date_time
-                %td= event.venue
-                %td= event.address
-
-        = link_to 'Add new event', new_event_path
 
         %h2
           Create New Movie 

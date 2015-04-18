@@ -13,7 +13,6 @@ class EventsController < ApplicationController
 
   def new
     # default: render 'new' template
-    @events = Event.all
   end
 
   def create
