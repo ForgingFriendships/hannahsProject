@@ -22,12 +22,14 @@ class ApplicationController < ActionController::Base
 
   protected # Copied from above... does it work here? -Greg
   def block_page_if_not_admin
-    flash[:notice] = "Sorry, must be signed in and have permission to view that page."
-    # if @current_user is nil, not safe to call method .admin on it, so check..
-    redirect_to root_path and return unless @current_user
-    # if you've reached this line, means that @curent_user wan't nil, so
-    # admin is a safe method to call on it...
-    redirect_to root_path and return unless @current_user.admin
+    if !(@current_user)
+      flash[:notice] = "Sorry must be signed in to view that page."
+      redirect_to root_path and return
+    end
+    if !(@current_user.admin)
+      flash[:notice] = "Sorry, must be signed in and have permission to view that page."
+      redirect_to root_path and return
+    end
   end
 
   #purpose: to maintain a session to check if it's logged in through omniauth
