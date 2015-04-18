@@ -60,26 +60,48 @@
                 <div class="content-heading text-center"> <!-- Input Your Home Content Here -->
                     <h1>Friendship. For everyone.</h1>
                     <p class="lead">The biggest barrier facing children with disabilities is often found in the behavior of others.<br>We're here to change that.</p>
-                    <a href="#tf-works" class="scroll goto-btn text-uppercase">View Our Works</a> <!-- Link to your portfolio section -->
                 </div><!-- End Input Your Home Content Here -->
             </div> <!-- end container -->
         </div><!-- End Overlay Color -->
     </div>
 
-    <!-- Intro Section
+    <!-- How FF Works
     ================================================== -->
     <div id="tf-intro">
         <div class="container"> <!-- container -->
+            <div class="content-heading text-center">
+                <h1>How FF Works</h1>
+            </div>
+            
             <div class="row"> <!-- row -->
+                <div id="team" class="owl-carousel owl-theme text-center"> <!-- team carousel wrapper -->
+                    <div class="item"> <!-- Team #1 -->
+                        <img src="img/team/01.jpg" alt="..." class="img-responsive"><!-- Team Image -->
+                        <div class="team-detail text-center">                        
+                            <h3><strong>Special Needs Child</strong></h3>
+                        </div>
+                        <p>Elementary age children with physical and intellectual disabilities</p>
+                    </div><!-- End Team #1 -->    
+                    
+                    <div class="item"> <!-- Team #2 -->
+                        <img src="img/team/02.jpg" alt="..." class="img-responsive"><!-- Team Image -->
+                        <div class="team-detail text-center">                        
+                            <h3><strong>Traditional Child</strong></h3>
+                        </div>
+                        <p>Middle school age children with leadership skills and empathy</p>    
+                    </div><!-- End Team #2 -->
 
-                <div class="col-md-8 col-md-offset-2"> 
-                    <img src="img/logo-w.png" class="intro-logo img-responsive" alt="free-template"> <!-- Your company logo in white -->
-                    <p>	WHERE HOME PAGE CONTENT GOES</p>
-                </div>
-                
+                    <div class="item"> <!-- Team #3 -->
+                        <img src="img/team/01.jpg" alt="..." class="img-responsive"><!-- Team Image -->
+                        <div class="team-detail text-center">                        
+                            <h3><strong>Friendship Event</strong></h3>
+                        </div>
+                        <p>Connecting the children with fun and positive Learning activities at our monthly events</p>    
+                    </div><!-- End Team #3 -->
+                </div> <!-- end team carousel wrapper -->                
             </div><!-- end row -->
         </div><!-- end container -->
-    </div>
+    </div><!-- End of How FF Works -->
 
     <!-- Events Section
     ================================================== -->
@@ -90,243 +112,33 @@
                 <h5><em>We host events for children to bond with each other.</em></h5>
                 <div class="fancy"><span><img src="img/favicon.png" alt="..."></span></div>
             </div>
-
-        </div><!-- End Container -->
-
-        <div class="container-fluid"> <!-- fluid container -->
-            <div id="events" class="row">
-               <div class="col-sm-6 col-md-4"> <!-- event #1 -->
-                  <div class="thumbnail">
-                     <img src="img/portfolio/san-franc.jpg" alt="..."> <!-- event #1 picture -->
-                     <div class="caption">
-                        <h3>Leadership Training in San Franciso</h3>
-                        <p>Jan 31st, 2015. Come join us for our first leadership training!</p>
-                        <p><a href="..." class="btn btn-primary" role="button">Register!</a> <a href="#" class="btn btn-default" role="button">Volunteer!</a></p>
-                     </div>
-                  </div>
-               </div>
-
-	       <div class="col-sm-6 col-md-4"> <!-- event #2 -->
-                  <div class="thumbnail">
-                     <img src="img/portfolio/oakland.jpg" alt="..."><!-- event #2 picture -->
-                     <div class="caption">
-                        <h3>Parent Meeting in Oakland</h3>
-                        <p>Calling all interested parents!</p>
-                        <p><a href="..." class="btn btn-primary" role="button">Register!</a> <a href="#" class="btn btn-default" role="button">Volunteer!</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-        </div> <!-- End Container-Fluid -->
-    </div>            
-
- <!-- Inspiration ================================================== -->
- <div id="tf-inspiration">
-    <div class="container">
-            <div class="section-header">
-                <h2>Our <span class="highlight"><strong>Inspiration</strong></span></h2>
-                <h5><em>They changed our lives with a smile.</em></h5>
-                <div class="fancy"><span><img src="img/favicon.png" alt="..."></span></div>
-            </div>
-
-    </div><!-- End Container -->
-    <div class="container">
-	<div class="row"> <!-- row -->
-       
-                
-                <div class="col-md-6 text-right">  <!-- Left Content Col 6 -->
-                    <div class="media service"> <!-- Service #1 -->
-                        <div class="media-body">
-                            <h4 class="media-heading">Hannah's Story</h4>
-                            <p>Forging Friendships was created to honor and celebrate the life of Hannah Noelle who passed away on October 26, 2013. 
-
-Hannah’s nickname was “Sunshine Girl,” which described her perfectly.  She was an honor role student and the President of her eighth-grade class.  Bi-lingual in both English and Spanish, Hannah enjoyed learning in an immersion school environment.  
-
-Hannah loved nature and enjoyed to bake, travel and read...  She was an aspiring drummer and an avid mogul skier showing no mercy to the steep, wintery slopes of Lake Tahoe. 
-
-Hannah lit up the world with her sweet smile; she is missed beyond measure and will be treasured in our hearts, always.   </p>
-                        </div>
-                        <div class="media-right media-middle">
-                            <i class="fa fa-venus-mars"></i>
-                        </div>
-                    </div><!-- End Service #1 -->
-
-                </div> <!-- End Left Content Col 6 -->
-
-                <div class="col-md-6"> <!-- Right Content Col 6 -->
-                    <div class="media service"> <!-- Service #4 -->
-                        <div class="media-left media-middle">
-                            <i class="fa fa-bicycle"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Zachary's Story</h4>
-                            <p>Zachary David is Hannah’s younger cousin who has Cerebral Palsy, severe brain malformation, Hydrocephalus and is wheelchair dependent.  Zac has very little language and although he is extremely limited in fine and gross motor skills, he certainly makes up for that with in his infectious laugh, joyful spirit and capacity to genuinely love everyone he meets.  
-
-Despite their obvious physical and intellectual differences, Zac and Hannah truly enjoyed each other’s company and were complete equals because of the love and friendship they shared together.   
-
-The inspiration behind Forging Friendships is Zac and Hannah’s uncommon kindness towards each other.  Cousins? Yes.  Friends? Ab-so-lutely!</p>
-                        </div>
-                    </div><!-- end Service #4 -->
-
-                    
-                </div><!-- end Right Content Col 6 -->
-                
-            </div><!-- end row -->
-
-        </div><!-- end container -->
-    </div>
-
-
-    <!-- Story Section
-    ================================================== -->
-    <div id="tf-story">        
-        <div class="container"> <!-- container -->
-            <div class="section-header">
-                <h2>Leadership <span class="highlight"><strong>Team</strong></span></h2>
-                <h5><em>verbiage here</em></h5>
-            </div>
-        </div> <!-- end container -->
             
-        <div class="container">
-	          <div class="row"> <!-- row -->
-                <div class="col-md-6 text-center">  <!-- Left Content Col 6 -->
-                    <div><span><img src="img/team/01.jpg" alt="..."></span>
-                    </div>
-                    <div class="team-detail text-center">
-                        <h3>Kristin Spanier</h3>
-                        <p class="text-uppercase">Founder</p>
-                        <ul class="list-inline social"> 
-                            <li><a href="#" class="fa fa-facebook"></a></li> <!-- facebook link here -->
-                            <li><a href="#" class="fa fa-twitter"></a></li> <!-- twitter link here -->
-                            <li><a href="#" class="fa fa-google-plus"></a></li> <!-- google plus link here -->
-                        </ul>
-                    </div>     
-                </div> <!-- End Left Content Col 6 -->
-<br>
-<br>
-<br>
-                <div class="col-md-6"> <!-- Right Content Col 6 -->
-                    <h4 class="media-heading">Kristin's Bio</h4>
-                        <p>Kristin founded Forging Friends in 2013 and currently serves as Chief Executive Officer, overseeing all aspects of the organization.
-
-For more than 15 years, prior to establishing Forging Friendships, Kristin worked within the high tech industry of Silicon Valley as a software sales executive at Oracle, PeopleSoft and Kewill ERP. She rose through each organization successively, eventually taking on greater responsibilities to become a top revenue performer while building and maintaining well established long term partner relationships with many key executives. Kristin brings business acumen as well as a genuine desire to solve a need with this unique nonprofit. 
-<<<<<<< HEAD
-=======
-
-Kristin is the mother of three boys.  CJ is thirteen; Joshua is ten and her youngest, Zac is nine years old.  Zac is Kristin’s special needs child; he has Cerebral Palsy and is wheelchair dependent.  
-
-
-Thought the years, Kristin has found that unlike her traditional children, Zac struggles to find meaningful friendships outside of school.  As a mother in a unique situation, she hasn’t had the opportunity to make connections with other parents who face similar challenges. 
-
-She created Forging Friendships to fill the void of social isolation that special needs children and their parents often face.  
-
-Her vision is an uplifting environment where special needs children can forge friendships with traditional children and where the parents can also make positive connections with other caregivers in similar situations.  
-</p>
-                </div><!-- end Right Content Col 6 -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-        
-        <div class="container">
-	          <div class="row"> <!-- row -->
-                <div class="col-md-6 text-center">  <!-- Left Content Col 6 -->
-                    <div><span><img src="img/team/02.jpg" alt="..."></span>
-                    </div>
-                    <div class="team-detail text-center">
-                        <h3>Courtney Moran</h3>
-                        <p class="text-uppercase">Co-Founder and Chief Marketing Officer</p>
-                        <ul class="list-inline social"> 
-                            <li><a href="#" class="fa fa-facebook"></a></li> <!-- facebook link here -->
-                            <li><a href="#" class="fa fa-twitter"></a></li> <!-- twitter link here -->
-                            <li><a href="#" class="fa fa-google-plus"></a></li> <!-- google plus link here -->
-                        </ul>
-                    </div>
-                </div> <!-- End Left Content Col 6 -->
-<br>
-<br>
-<br>
-                <div class="col-md-6"> <!-- Right Content Col 6 -->
-                    <h4 class="media-heading">Courtney's Bio</h4>
-                        <p>Courtney is a strategic thinker and subject matter expert in the field of marketing, she has lead various marketing initiatives and was the Executive Director of Marketing for Essential.com, a high-tech startup firm in Massachusetts. At this position Courtney was responsible for the corporate vision of Essential’s brand as it expanded and matured into new markets.  She spearheaded the implementation of all marketing activities across all aspects of the marketing mix. 
-
-Courtney left the corporate world to raise her twins, Jake and Abby, who are now eleven years old. Both of her children will be part Forging Friendship’s Empathy in Action program, as traditional children are an essential part of the volunteer team.  
-
-Courtney grew up watching her mother volunteer for various nonprofits, which eventually developed into a full-time position this included leading various nonprofit fundraising efforts, raising community awareness as well as establishing and maintaining relationships with individual donors at all levels. This positive exposure never left Courtney. 
-
-Today Courtney is following in the example set by her mother; she is excited to use her corporate skill set and contribute, as her mother lovingly did, to those in need. 
-
-</p>
-                </div><!-- end Right Content Col 6 -->
-            </div><!-- end row -->
-        </div><!-- end container -->
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h2>Donate</h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2>Sign-Up</h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2>Share</h2>
+                    <h2>Your Story</h2>
+                </div>
+            </div>
+        </div><!-- End Container -->
     </div>
->>>>>>> 1de80fbf39f6d8353446abc69a323b6ec666ee6b
+    <br>
+    <br>
 
-Kristin is the mother of three boys.  CJ is thirteen; Joshua is ten and her youngest, Zac is nine years old.  Zac is Kristin’s special needs child; he has Cerebral Palsy and is wheelchair dependent.  
-
-
-Thought the years, Kristin has found that unlike her traditional children, Zac struggles to find meaningful friendships outside of school.  As a mother in a unique situation, she hasn’t had the opportunity to make connections with other parents who face similar challenges. 
-
-She created Forging Friendships to fill the void of social isolation that special needs children and their parents often face.  
-
-Her vision is an uplifting environment where special needs children can forge friendships with traditional children and where the parents can also make positive connections with other caregivers in similar situations.  
-</p>
-                </div><!-- end Right Content Col 6 -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-        
-        <div class="container">
-	          <div class="row"> <!-- row -->
-                <div class="col-md-6 text-center">  <!-- Left Content Col 6 -->
-                    <div><span><img src="img/team/02.jpg" alt="..."></span>
-                    </div>
-                    <div class="team-detail text-center">
-                        <h3>Courtney Moran</h3>
-                        <p class="text-uppercase">Co-Founder and Chief Marketing Officer</p>
-                        <ul class="list-inline social"> 
-                            <li><a href="#" class="fa fa-facebook"></a></li> <!-- facebook link here -->
-                            <li><a href="#" class="fa fa-twitter"></a></li> <!-- twitter link here -->
-                            <li><a href="#" class="fa fa-google-plus"></a></li> <!-- google plus link here -->
-                        </ul>
-                    </div>
-                </div> <!-- End Left Content Col 6 -->
-<br>
-<br>
-<br>
-                <div class="col-md-6"> <!-- Right Content Col 6 -->
-                    <h4 class="media-heading">Courtney's Bio</h4>
-                        <p>Courtney is a strategic thinker and subject matter expert in the field of marketing, she has lead various marketing initiatives and was the Executive Director of Marketing for Essential.com, a high-tech startup firm in Massachusetts. At this position Courtney was responsible for the corporate vision of Essential’s brand as it expanded and matured into new markets.  She spearheaded the implementation of all marketing activities across all aspects of the marketing mix. 
-
-Courtney left the corporate world to raise her twins, Jake and Abby, who are now eleven years old. Both of her children will be part Forging Friendship’s Empathy in Action program, as traditional children are an essential part of the volunteer team.  
-
-Courtney grew up watching her mother volunteer for various nonprofits, which eventually developed into a full-time position this included leading various nonprofit fundraising efforts, raising community awareness as well as establishing and maintaining relationships with individual donors at all levels. This positive exposure never left Courtney. 
-
-Today Courtney is following in the example set by her mother; she is excited to use her corporate skill set and contribute, as her mother lovingly did, to those in need. 
-
-</p>
-                </div><!-- end Right Content Col 6 -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div>
-
-
-    
-
-
-    
     <!-- Footer 
     ================================================== -->
     <div id="tf-footer">
         <div class="container"><!-- container -->
-            <p class="pull-left">© 2015 ethanol. All rights reserved. Theme by Rudhi Sasmito.</p> <!-- copyright text here-->
+            <p class="pull-left">© 2015 Forging Friendships. All rights reserved.</p> <!-- copyright text here-->
             <ul class="list-inline social pull-right">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li> <!-- Change # With your FB Link -->
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li> <!-- Change # With your Twitter Link -->
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li> <!-- Change # With your Google Plus Link -->
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li> <!-- Change # With your Dribbble Link -->
-                <li><a href="#"><i class="fa fa-behance"></i></a></li> <!-- Change # With your Behance Link -->
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> <!-- Change # With your LinkedIn Link -->
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li> <!-- Change # With your Youtube Link -->
-                <li><a href="#"><i class="fa fa-pinterest"></i></a></li> <!-- Change # With your Pinterest Link -->
+                <li><a href="auth/facebook"><i class="fa fa-facebook"></i></a></li> <!-- Change # With your FB Link -->
+                <li><a href="auth/twitter"><i class="fa fa-twitter"></i></a></li> <!-- Change # With your Twitter Link -->
+                <li><a href="auth/google_oauth2"><i class="fa fa-google-plus"></i></a></li> <!-- Change # With your Google Plus Link -->
             </ul>
         </div><!-- end container -->
     </div>

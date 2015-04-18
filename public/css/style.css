@@ -66,7 +66,7 @@ a:focus {
     padding: 5px 5px;
     margin: 8px 10px;
     text-transform: uppercase;
-    transition: all 0.5s;
+    transition: all 0.8s;
 }
 .navbar-default .navbar-nav > li > a.active,
 .navbar-default .navbar-nav > li > a:hover,
@@ -85,8 +85,10 @@ a:focus {
 ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; text-align:right; min-width:0px;}
 .nav .dropdown-toggle .caret { display:none; }
 
+
 .navbar-brand {
-   margin-bottom: 0px;
+   margin-bottom: 30px;
+   
 }
 
 .navbar-brand img {
@@ -98,6 +100,11 @@ nav.shrink {
   margin-top:0;
 }
 
+.navbar-nav a.shrink{
+  padding: 0px 0px;
+   margin: 0px 0px;
+}
+
 nav.shrink a {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -106,6 +113,7 @@ nav.shrink a {
 
 nav.shrink .navbar-brand {
   font-size: 15px;
+  margin-bottom: 0px
 }
 
 nav.shrink .navbar-toggle {
@@ -313,7 +321,7 @@ a.goto-btn { margin-right: 30px }
 }
 /* Intro Section */
 #tf-intro {
-    background-color: #e5b112;
+    background-color: rgb(77, 168, 72);
     padding: 5% 0;
     color: #ffffff;
     text-align: center;
@@ -1008,7 +1016,7 @@ p.help-block.text-danger ul li {
 /* Footer */
 #tf-footer {
     padding: 3% 0 2% 0;
-    background-color: #e5b112;
+    background-color: rgb(77, 168, 72);
     color: #ffffff;
 }
 ul.social li a i {
