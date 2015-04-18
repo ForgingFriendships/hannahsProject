@@ -41,7 +41,7 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "/inspiration"} Inpiration
+                      %a{:href => "/inspiration"} Inspiration
                     %li
                       %a{:href => "/management_team"} Management Team
             %li.dropdown/
@@ -67,6 +67,11 @@
                   = (@current_user.name)
                   %span.caret
                     %ul.dropdown-menu{:role => "menu"}
+                      - if (@current_user.admin)
+                        %li
+                          %a{:href => "/events"} All Events
+                        %li
+                          %a{:href => "/events/new"} Add Event
                       %li
                         %a{:href => "/logout"} Logout...
             %li
