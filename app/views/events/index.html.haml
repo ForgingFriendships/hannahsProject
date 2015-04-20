@@ -59,9 +59,14 @@
         / container
         .section-header
           %h2
+            %p
+            %p
+            %p
+            %p
+            %p
             All Events
 
-        %table#movies
+        %table#events
           %thead
             %tr
               %th Event Name
@@ -83,7 +88,7 @@
                 %td= event.address
                 %td= link_to "More about #{event.event_name}", event_path(event)
 
-        = link_to 'Add new event', new_event_path
+        = button_to 'Add New Event', new_event_path
 
 
 

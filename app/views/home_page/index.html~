@@ -70,7 +70,7 @@
     <div id="tf-intro">
         <div class="container"> <!-- container -->
             <div class="content-heading text-center">
-                <h1>How FF Works</h1>
+                <h1><span class="highlight"><strong>How FF Works</strong></span></h1>
             </div>
             <br>
             <br>
@@ -83,6 +83,7 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- End of How FF Works -->
+
 
     <!-- Events Section
     ================================================== -->

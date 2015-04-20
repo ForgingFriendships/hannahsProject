@@ -15,9 +15,8 @@
       Main Navigation
       \==================================================
     %nav#tf-menu.navbar.navbar-default.navbar-fixed-top
-      - if @current_user
-        %p.welcome  Welcome, #{@current_user.name}!
-        = link_to 'Log Out', logout_path
+      -# THIS IS HERE TO DISPLAY WARNING MESSAGES/NOTICES TO USER SOMETIMES
+      = flash[:notice]
       .container
         / Brand and toggle get grouped for better mobile display
         .navbar-header
@@ -41,7 +40,7 @@
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "/inspiration"} Inpiration
+                      %a{:href => "/inspiration"} Inspiration
                     %li
                       %a{:href => "/management_team"} Management Team
             %li.dropdown/
@@ -67,6 +66,11 @@
                   = (@current_user.name)
                   %span.caret
                     %ul.dropdown-menu{:role => "menu"}
+                      - if (@current_user.admin)
+                        %li
+                          %a{:href => "/events"} All Events
+                        %li
+                          %a{:href => "/events/new"} Add Event
                       %li
                         %a{:href => "/logout"} Logout...
             %li
