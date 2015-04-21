@@ -11,6 +11,7 @@ Forging::Application.routes.draw do
   match '/index', :to => 'home_page#index'
   match '/inspiration', :to => 'home_page#inspiration'
   match '/management_team', :to => 'home_page#management_team'
+  match '/sign_up', :to => 'home_page#sign_up'
 
   
 
