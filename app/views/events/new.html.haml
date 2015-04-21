@@ -14,33 +14,33 @@
               /
                 Favicons
                 \==================================================
-              %link{:href => "img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
-                %link{:href => "img/apple-touch-icon.png", :rel => "apple-touch-icon"}
-                  %link{:href => "img/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
-                    %link{:href => "img/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
+              %link{:href => "../img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}
+                %link{:href => "../img/apple-touch-icon.png", :rel => "apple-touch-icon"}
+                  %link{:href => "../img/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
+                    %link{:href => "../img/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
                       / Bootstrap
-                      %link{:href => "css/bootstrap.css", :rel => "stylesheet", :type => "text/css"}
-                        %link{:href => "fonts/font-awesome/css/font-awesome.css", :rel => "stylesheet", :type => "text/css"}
+                      %link{:href => "../css/bootstrap.css", :rel => "stylesheet", :type => "text/css"}
+                        %link{:href => "../fonts/font-awesome/css/font-awesome.css", :rel => "stylesheet", :type => "text/css"}
                           /
                             Nivo Lightbox
                             \==================================================
-                          %link{:href => "css/nivo-lightbox.css", :rel => "stylesheet"}
-                            %link{:href => "css/nivo_lightbox_themes/default/default.css", :rel => "stylesheet"}
+                          %link{:href => "../css/nivo-lightbox.css", :rel => "stylesheet"}
+                            %link{:href => "../css/nivo_lightbox_themes/default/default.css", :rel => "stylesheet"}
                               /
                                 Slider
                                 \==================================================
-                              %link{:href => "css/owl.carousel.css", :media => "screen", :rel => "stylesheet"}
-                                %link{:href => "css/owl.theme.css", :media => "screen", :rel => "stylesheet"}
+                              %link{:href => "../css/owl.carousel.css", :media => "screen", :rel => "stylesheet"}
+                                %link{:href => "../css/owl.theme.css", :media => "screen", :rel => "stylesheet"}
                                   /
                                     Stylesheet
                                     \==================================================
-                                  %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}
-                                    %link{:href => "css/responsive.css", :rel => "stylesheet", :type => "text/css"}
+                                  %link{:href => "../css/style.css", :rel => "stylesheet", :type => "text/css"}
+                                    %link{:href => "../css/responsive.css", :rel => "stylesheet", :type => "text/css"}
                                       /
                                         Google Fonts
                                         \==================================================
                                       %link{:href => "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic", :rel => "stylesheet", :type => "text/css"}
-                                        %script{:src => "js/modernizr.custom.js", :type => "text/javascript"}
+                                        %script{:src => "../js/modernizr.custom.js", :type => "text/javascript"}
                                         / HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
                                         / WARNING: Respond.js doesn't work if you view the page via file://
                                         /[if lt IE 9]
@@ -59,9 +59,58 @@
         / container
         .section-header
 
-
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
+        %p
         %h2
-          Create New Movie 
+          Create New Event 
 
         = form_tag events_path do
           = label :event, :event_name, 'Event Name'
@@ -74,10 +123,10 @@
           = text_field :event, :event_name
 
           = label :event, :start_date_time, 'Start Date Time'
-          = date_select :event, :start_date_time
+          = datetime_select :event, :start_date_time
 
           = label :event, :end_date_time, 'End Date Time'
-          = date_select :event, :end_date_time
+          = datetime_select :event, :end_date_time
 
           = label :event, :venue, 'Venue'
           = text_field :event, :venue
@@ -144,29 +193,29 @@
       / end container
     / jQuery (necessary for Bootstrap's JavaScript plugins)
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
-    %script{:src => "js/jquery.1.11.1.js", :type => "text/javascript"}
+    %script{:src => "../js/jquery.1.11.1.js", :type => "text/javascript"}
     / Include all compiled plugins (below), or include individual files as needed
-    %script{:src => "js/bootstrap.js", :type => "text/javascript"}
-    %script{:src => "js/owl.carousel.js", :type => "text/javascript"}
+    %script{:src => "../js/bootstrap.js", :type => "text/javascript"}
+    %script{:src => "../js/owl.carousel.js", :type => "text/javascript"}
     / Owl Carousel Plugin
-    %script{:src => "js/SmoothScroll.js", :type => "text/javascript"}
+    %script{:src => "../js/SmoothScroll.js", :type => "text/javascript"}
     / Google Map
     %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&amp;sensor=false", :type => "text/javascript"}
-    %script{:src => "js/map.js", :type => "text/javascript"}
+    %script{:src => "../js/map.js", :type => "text/javascript"}
     / Parallax Effects
-    %script{:src => "js/skrollr.js", :type => "text/javascript"}
-    %script{:src => "js/imagesloaded.js", :type => "text/javascript"}
+    %script{:src => "../js/skrollr.js", :type => "text/javascript"}
+    %script{:src => "../js/imagesloaded.js", :type => "text/javascript"}
     / Portfolio Filter
-    %script{:src => "js/jquery.isotope.js", :type => "text/javascript"}
+    %script{:src => "../js/jquery.isotope.js", :type => "text/javascript"}
     / LightBox Nivo
-    %script{:src => "js/nivo-lightbox.min.js", :type => "text/javascript"}
+    %script{:src => "../js/nivo-lightbox.min.js", :type => "text/javascript"}
     / Contact page
-    %script{:src => "js/jqBootstrapValidation.js", :type => "text/javascript"}
-    %script{:src => "js/contact.js", :type => "text/javascript"}
+    %script{:src => "../js/jqBootstrapValidation.js", :type => "text/javascript"}
+    %script{:src => "../js/contact.js", :type => "text/javascript"}
     /
       Javascripts
       \==================================================
-    %script{:src => "js/main.js", :type => "text/javascript"}
+    %script{:src => "../js/main.js", :type => "text/javascript"}
 
 
 

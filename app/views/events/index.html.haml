@@ -69,26 +69,29 @@
         %table#events
           %thead
             %tr
-              %th Event Name
-              %th Description
-              %th Host
-              %th Start Time
-              %th End Time
-              %th Venue
-              %th Address
+              -# Note there are invisible spaces after each of following th titles
+              %th Event Name           
+              %th Description          
+              %th Host          
+              %th Start Time                    
+              %th End Time                      
+              %th Venue                
+              %th Address                                 
           %tbody
             - @events.each do |event|
               %tr
                 %td= event.event_name 
                 %td= event.description
                 %td= event.host
-                %td= event.start_date_time
-                %td= event.end_date_time
+                %td= event.start_date_time.to_formatted_s(:long_ordinal)
+                %td= event.end_date_time.to_formatted_s(:long_ordinal)
                 %td= event.venue
                 %td= event.address
-                %td= link_to "More about #{event.event_name}", event_path(event)
 
-        = button_to 'Add New Event', new_event_path
+        %p
+        %p
+        %strong
+          = link_to 'Add New Event', new_event_path
 
 
 

@@ -10,6 +10,11 @@ Forging::Application.routes.draw do
   match '/home', :to => 'home_page#home'
   match '/index', :to => 'home_page#index'
   match '/inspiration', :to => 'home_page#inspiration'
+  match '/management_team', :to => 'home_page#management_team'
+
+  
+
+
 
   get 'auth/:provider/callback' => 'sessions#create', :as => 'login'
   get 'logout' => 'sessions#destroy'
