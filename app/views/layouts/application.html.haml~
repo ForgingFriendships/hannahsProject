@@ -32,8 +32,9 @@
 
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
-            %li
+            %li.dropdown
               %a{:href => "/program"} Program
+              
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
                 Story
@@ -47,6 +48,8 @@
             
             %li
               %a{:href => "/donate"} Donate
+            %li
+              %a{:href => "/contact"} Contact
               
             - if !(@current_user)
               %li.dropdown
@@ -73,8 +76,6 @@
                           %a{:href => "/events/new"} Add Event
                       %li
                         %a{:href => "/logout"} Logout...
-            %li
-              %a{:href => "/contact"} Contact
         / /.navbar-collapse
       / /.container-fluid
 
