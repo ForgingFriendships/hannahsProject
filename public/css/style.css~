@@ -247,7 +247,7 @@ a.goto-btn:hover {
     width: 14px;
     height: 14px;
     margin: 0;
-    background-color: #E5B112;
+    background-color: #fff450;
 }
 .carousel-fade .carousel-inner .item {
     opacity: 0;
