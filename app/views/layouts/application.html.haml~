@@ -16,11 +16,7 @@
       \==================================================
     %nav#tf-menu.navbar.navbar-default.navbar-fixed-top
       -# THIS IS HERE TO DISPLAY WARNING MESSAGES/NOTICES TO USER SOMETIMES
-      -#= flash[:notice]
-
-      - if @current_user
-        %p.welcome  Welcome, #{@current_user.name}!
-        = link_to 'Log Out', logout_path
+      = flash[:notice]
       .container
         / Brand and toggle get grouped for better mobile display
         .navbar-header
@@ -36,8 +32,18 @@
 
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
+
             %li
-              %a{:href => "/program"} Program
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                %a{:href => "/program"} Program
+                %span.caret
+                  %ul.dropdown-menu{:role => "menu"}
+                    %li
+                      %a{:href => "/events"} Events
+
+            %li.dropdown/
+              
+
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
                 Story
