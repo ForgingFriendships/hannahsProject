@@ -27,33 +27,28 @@
             %span.icon-bar
             %span.icon-bar
           %a.navbar-brand{:href => "/index"}
-<<<<<<< HEAD
+
             %img{:alt => "FF logo-min", :src => "../img/logo-min.png"}/
-=======
-            %img{:alt => "FF logo-min", :src => "img/logo.png"}/
->>>>>>> 4546d0c295a2ef425fc61185b9138c464b43b2c6
+
         / Collect the nav links, forms, and other content for toggling
 
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
-<<<<<<< HEAD
-            %li.dropdown
-              %a{:href => "/program"} Program
-              
-=======
 
-            %li
+            %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
-                %a{:href => "/program"} Program
+                Program
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
+                      %a{:href => "/program"} About
+                    %li
                       %a{:href => "/events"} Events
+
 
             %li.dropdown/
               
 
->>>>>>> e9112a177d226c143ebaa9a8468ecb34468786af
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
                 Story
