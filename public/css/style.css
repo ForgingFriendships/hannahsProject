@@ -25,7 +25,10 @@ h2 {
     font-weight: 300;
 }
 h5 { font-size: 16px }
-p { font-size: 14px }
+p {
+    font-size: 18px;
+    font-family: serif, Georgia, Times New Roman;
+}
 a {
     color: inherit;
     transition: all 0.5s;
@@ -157,7 +160,7 @@ nav.shrink .navbar-brand img{
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: #cfcfcf;
+    color: #FFF450;
 }
 #tf-home .overlay {
     background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
@@ -247,7 +250,7 @@ a.goto-btn:hover {
     width: 14px;
     height: 14px;
     margin: 0;
-    background-color: #E5B112;
+    background-color: #fff450;
 }
 .carousel-fade .carousel-inner .item {
     opacity: 0;
