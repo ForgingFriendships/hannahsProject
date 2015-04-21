@@ -34,6 +34,11 @@
 
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
+<<<<<<< HEAD
+            %li.dropdown
+              %a{:href => "/program"} Program
+              
+=======
 
             %li
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
@@ -49,6 +54,7 @@
             %li.dropdown/
               
 
+>>>>>>> e9112a177d226c143ebaa9a8468ecb34468786af
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
                 Story
