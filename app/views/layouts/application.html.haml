@@ -33,8 +33,19 @@
 
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav.navbar-right
-            %li
-              %a{:href => "/program"} Program
+
+            %li.dropdown
+              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
+                Program
+                %span.caret
+                  %ul.dropdown-menu{:role => "menu"}
+                    %li
+                      %a{:href => "/program"} About
+                    %li
+                      %a{:href => "/events"} Events
+            %li.dropdown/
+              
+
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
                 Story
