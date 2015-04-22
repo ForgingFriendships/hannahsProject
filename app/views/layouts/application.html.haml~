@@ -42,7 +42,7 @@
                     %li
                       %a{:href => "/program"} About
                     %li
-                      %a{:href => "/events"} Events
+                      %a{:href => "/events_all"} Events
             %li.dropdown/
               
 
