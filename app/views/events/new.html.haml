@@ -113,30 +113,39 @@
           Create New Event 
 
         = form_tag events_path do
-          = label :event, :event_name, 'Event Name'
-          = text_field :event, :event_name
 
-          = label :event, :description, 'Description'
+          = label :event, :event_name, 'Event Name:'
+          <br>
           = text_field :event, :event_name
-
-          = label :event, :host, 'Host'
+          <br>
+          = label :event, :description, 'Description:'
+          <br>
           = text_field :event, :event_name
-
-          = label :event, :start_date_time, 'Start Date Time'
+          <br>
+          = label :event, :host, 'Host:'
+          <br>
+          = text_field :event, :event_name
+          <br>
+          = label :event, :start_date_time, 'Start Date Time:'
+          <br>
           = datetime_select :event, :start_date_time
-
-          = label :event, :end_date_time, 'End Date Time'
+          <br>
+          = label :event, :end_date_time, 'End Date Time:'
+          <br>
           = datetime_select :event, :end_date_time
-
-          = label :event, :venue, 'Venue'
+          <br>
+          = label :event, :venue, 'Venue:'
+          <br>
           = text_field :event, :venue
-
-          = label :event, :address, 'Address'
+          <br>
+          = label :event, :address, 'Address:'
+          <br>
           = text_field :event, :address
-
-          = label :event, :max_capacity, 'Maximum Capacity'
+          <br>
+          = label :event, :max_capacity, 'Maximum Capacity:'
+          <br>
           = text_field :event, :max_capacity
-
+          <br><br>
           = submit_tag 'Save Changes'
 
 
