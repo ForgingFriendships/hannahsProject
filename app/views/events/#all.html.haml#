@@ -6,9 +6,9 @@
       \==================================================
     %meta{:charset => "utf-8"}
       /[if IE] <meta http-equiv="x-ua-compatible" content="IE=9" />
-      %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+%meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
         %title Ethanol Portfolio Template - Events Index
-        %meta{:content => "Ethanol is an Agency and Personal Portfolio Template built with bootstrap 3.3.2. This is created for a cause to support my uncle's campaign. Go and Donate at - https://life.indiegogo.com/fundraisers/medical-support-for-a-filipino-overseas-worker--3/x/10058181", :name => "description"}
+        %meta{:content => "Ethanol is an Agency and Personal Portfolio Template built with bootstrap       3.3.2. This is created for a cause to support my uncle's campaign. Go and Donate at - https://life.indiegogo.com/fundraisers/medical-support-for-a-filipino-overseas-worker--3/x/10058181", :name => "description"}
           %meta{:content => "portfolio, agency, bootstrap theme, mobile responsive, template, personal", :name => "keywords"}
             %meta{:content => "ThemeForces.Com", :name => "author"}
               /
@@ -72,7 +72,6 @@
               -# Note there are invisible spaces after each of following th titles
               %th Event Name           
               %th Description          
-              %th Host          
               %th Start Time                    
               %th End Time                      
               %th Venue                
@@ -82,16 +81,10 @@
               %tr
                 %td= event.event_name 
                 %td= event.description
-                %td= event.host
                 %td= event.start_date_time.to_formatted_s(:long_ordinal)
                 %td= event.end_date_time.to_formatted_s(:long_ordinal)
                 %td= event.venue
                 %td= event.address
-
-        %p
-        %p
-        %strong
-          = link_to 'Add New Event', new_event_path
 
 
 
