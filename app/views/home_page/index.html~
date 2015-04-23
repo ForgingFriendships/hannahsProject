@@ -13,7 +13,7 @@
     
     <!-- Favicons
     ================================================== -->
-    
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -59,11 +59,7 @@
             <div class="container"> <!-- container -->
                 <div class="content-heading text-center"> <!-- Input Your Home Content Here -->
                     <h1>Friendship. For everyone.</h1>
-<<<<<<< HEAD
                     <p class="lead">One of the biggest barriers facing children with disabilities is often found in the behavior of others.<br>We're here to change that.</p>
-=======
-                    <p class="lead">The biggest barrier facing children with disabilities is often found in the behavior of others.<br>We're here to change that.</p>
->>>>>>> a9d8c09f2796c45e54e9019e43eca5649d9cd3e7
 		    <a href="/sign_up.html" button type="button" class="btn btn-default">Sign Up</a>
                 </div><!-- End Input Your Home Content Here -->
             </div> <!-- end container -->
