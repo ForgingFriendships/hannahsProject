@@ -52,8 +52,78 @@
       \==================================================
     
     /
-      Contact Section
+      Body Section
       \==================================================
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    %p
+    #tf-events
+      .container
+        .section-header
+          %h2
+            Our Events build
+            %span.highlight
+              %strong Relationships
+          %h5
+            %em We host events for children to bond with each other.
+          .fancy
+            %span
+              %img{:alt => "...", :src => "img/favicon.png"}/
+      / End Container
+      .container-fluid
+        / fluid container
+        #events.row
+          .col-sm-4.col-md-6
+            / event #1
+            .thumbnail
+              %img{:alt => "...", :src => "img/portfolio/san-franc.jpg"}
+                / event #1 picture
+                .caption
+                  %h3=@events.first.event_name
+                  %p
+                    = @events.first.start_date_time.to_date.to_formatted_s(:long_ordinal).concat(". ")
+                    = @events.first.description
+                  %p
+                    %a.btn.btn-primary{:href => "...", :role => "button"} Register!
+                    %a.btn.btn-default{:href => "#", :role => "button"} Volunteer!
+          .col-sm-6.col-md-4
+            / event #2
+            .thumbnail
+              %img{:alt => "...", :src => "img/portfolio/oakland.jpg"}
+                / event #2 picture
+                .caption
+                  %h3=@events.second.event_name
+                  %p
+                    = @events.second.start_date_time.to_date.to_formatted_s(:long_ordinal).concat(". ")
+                    = @events.second.description
+                  %p
+                    %a.btn.btn-primary{:href => "...", :role => "button"} Register!
+                    %a.btn.btn-default{:href => "#", :role => "button"} Volunteer!
+      / End Container-Fluid
+
     #tf-contact.contact
       .container
         / container
@@ -72,7 +142,6 @@
               -# Note there are invisible spaces after each of following th titles
               %th Event Name           
               %th Description          
-              %th Host          
               %th Start Time                    
               %th End Time                      
               %th Venue                
@@ -82,16 +151,10 @@
               %tr
                 %td= event.event_name 
                 %td= event.description
-                %td= event.host
                 %td= event.start_date_time.to_formatted_s(:long_ordinal)
                 %td= event.end_date_time.to_formatted_s(:long_ordinal)
                 %td= event.venue
                 %td= event.address
-
-        %p
-        %p
-        %strong
-          = link_to 'Add New Event', new_event_path
 
 
 
