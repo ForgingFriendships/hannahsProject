@@ -1,6 +1,10 @@
 Forging::Application.routes.draw do
 
+  # Note there is a publically visible events page and an admin only one
+  # the admin only one is at '/events', or events#index at this time,
+  # the public one is at 'events/all'
   resources :events
+  get '/events_all' => 'events#all'
 
   root to: 'home_page#index'
 
@@ -13,7 +17,7 @@ Forging::Application.routes.draw do
   match '/management_team', :to => 'home_page#management_team'
   match '/sign_up', :to => 'home_page#sign_up'
 
-  
+
 
 
 
