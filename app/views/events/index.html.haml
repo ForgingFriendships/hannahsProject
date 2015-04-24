@@ -64,7 +64,17 @@
             %p
             %p
             %p
+            %p
+            %p
+            %p
+            %p
+            %p
             All Events
+
+
+
+
+
 
         %table#events.table
           %thead
@@ -87,12 +97,11 @@
                 %td= event.end_date_time.to_formatted_s(:long_ordinal)
                 %td= event.venue
                 %td= event.address
-
+                %td= link_to "Delete Event", events_path(event), :method :delete
         %p
         %p
         %strong
           = link_to 'Add New Event', new_event_path
-
 
 
 

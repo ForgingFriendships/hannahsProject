@@ -115,8 +115,7 @@
           <br>
           <hr style="height:1px;border-width:0;color:gray;background-color:gray">
 
-        = form_tag events_path do
-
+        = form_tag events_path, :method => "POST" do
           = label :event, :event_name, 'Event Name:'
           <br>
           = text_field :event, :event_name
