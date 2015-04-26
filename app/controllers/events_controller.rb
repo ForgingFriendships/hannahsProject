@@ -25,33 +25,61 @@ class EventsController < ApplicationController
 
   def all
     @events = Event.find(:all, :order => :start_date_time)
+    @events.each do |event|
+      if !(event.event_picture_file_path)
+        event.update_attribute(:event_picture_file_path, "/img/events/volunteers-hands.jpg")
+      end
+    end
   end
+
 
   def new
     # default: render 'new' template
   end
 
+
+
   def create
-    @event = Event.create!(params[:event])
+    @event_creation_params = params[:event]
+    # Ensure there is a maximum limit on people who may attend event...
+    # and that the limit was given as a Fixnum integer
+    if (@event_creation_params[:max_capacity] == nil) || (@event_creation_params[:max_capacity].class != Fixnum)
+      @event_creation_params[:max_capacity] = 0
+    end
+
+    # Ensure you don't start a new event with "nil" people attending (this
+    # causes errors down the line, nor with a negative number of people
+    # attending event (if number attending is negative when event is created
+    # it would allow more people to register for event than the max_capacity)..
+    if (@event_creation_params[:num_persons_attending] == nil) || (@event_creation_params[:num_person_attending] < 0)
+      @event_creation_params[:num_persons_attending] = 0
+    end
+
+    @event = Event.create!(@event_creation_params)
     flash[:notice] = "#{@event.event_name} was successfully created."
     redirect_to events_path
   end
 
+
+
+
+
+
   def edit
-    @event = Event.find params[:id]
+    @event = Event.find(params[:id])
   end
 
   def update
-    @event = Event.find params[:id]
+    @event = Event.find(params[:id])
     @event.update_attributes!(params[:event])
     flash[:notice] = "#{@event.event_name} was successfully updated."
-    redirect_to events_path(@event)
+    redirect_to events_path(@event) and return
   end
 
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
-    flash[:notice] = "Event '#{@event.event_path}' deleted."
+    flash[:notice] = "Event '#{@event.event_name}' deleted."
     redirect_to events_path
   end
 
