@@ -16,8 +16,10 @@ class ApplicationController < ActionController::Base
   def block_page_if_not_signed_in
     # NOTE THIS ONLY STOPS NOT-LOGGED PEOPLE, ANYONE CAN REGISTER AND
     # LOG IN AND SEE THE PAGES THIS IS APPLIED TO, NOT JUST ADMINS
-    flash[:notice] = "Sorry, must be signed in to view that page."
-    redirect_to root_path and return unless @current_user
+    if !(@current_user)
+      flash[:notice] = "Sorry, must be signed in to view that page."
+      redirect_to root_path and return
+    end
   end
 
   protected # Copied from above... does it work here? -Greg

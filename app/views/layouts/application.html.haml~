@@ -84,7 +84,9 @@
                         %li
                           %a{:href => "/events"} All Events
                         %li
-                          %a{:href => "/events/new"} Add Event
+                          %a{:href => "/events/new"} Create New Event
+                      %li
+                        %a{:href => "/my_events"} My Events!
                       %li
                         %a{:href => "/logout"} Logout...
         / /.navbar-collapse

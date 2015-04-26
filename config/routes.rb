@@ -19,7 +19,8 @@ Forging::Application.routes.draw do
   match '/sign_in', :to => 'home_page#sign_in'
 
 
-
+  post '/register_for_event', :to => 'users#register_for_event'
+  get '/my_events', :to => 'users#my_events'
 
 
   get 'auth/:provider/callback' => 'sessions#create', :as => 'login'

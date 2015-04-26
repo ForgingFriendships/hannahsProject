@@ -147,8 +147,58 @@
           = label :event, :max_capacity, 'Maximum Capacity:'
           <br>
           = text_field :event, :max_capacity
+          <br>
+          = label :event, :event_picture_file_path, 'Picture (see pictures and note at bottom of page):'
+          <br>
+          %select#event_event_picture_file_path{:name => "event[event_picture_file_path]"}
+            %option{:value => "/img/events/golden-gate-bridge.jpg"}
+              golden-gate-bridge.jpg
+            %option{:value => "/img/events/plant-bridge.jpg"}
+              plant-bridge.jpg
+            %option{:value => "/img/events/SF-city.jpg"}
+              SF-city.jpg
+            %option{:value => "/img/events/volunteers-hands.jpg"}
+              volunteers-hands.jpg
+            %option{:value => "/img/events/youth-playing.jpg"}
+              youth-playing.jpg
           <br><br>
           = submit_tag 'Save Changes'
+        <br><br><br><br><br>
+
+
+
+        %p
+          Choose one of these pictures (use the drop-down box above).  The picture will be displayed alongside this event's description on certain pages of the site:
+        <br><br>
+        golden-gate-bridge.jpg
+        <br>
+        = image_tag("/img/events/golden-gate-bridge.jpg", width: "320")
+        <br><br>
+
+        <br><br>
+        plant-bridge.jpg
+        <br>
+        = image_tag("/img/events/plant-bridge.jpg", width: "320")
+        <br><br>
+
+        <br><br>
+        SF-city.jpg
+        <br>
+        = image_tag("/img/events/SF-city.jpg", width: "320")
+        <br><br>
+
+        <br><br>
+        volunteers-hands.jpg
+        <br>
+        = image_tag("/img/events/volunteers-hands.jpg", width: "320")
+        <br><br>
+
+        <br><br>
+        youth-playing.jpg
+        <br>
+        = image_tag("/img/events/youth-playing.jpg", width: "320")
+        <br><br>
+          
 
 
 

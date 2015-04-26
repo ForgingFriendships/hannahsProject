@@ -11,21 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150412151641) do
+ActiveRecord::Schema.define(:version => 20150426094155) do
 
   create_table "events", :force => true do |t|
     t.string   "event_name"
     t.text     "description"
     t.string   "host"
-    t.datetime "start_date_time",       :null => false
-    t.datetime "end_date_time",         :null => false
+    t.datetime "start_date_time",         :null => false
+    t.datetime "end_date_time",           :null => false
     t.string   "venue"
     t.text     "address"
     t.integer  "num_persons_attending"
     t.integer  "max_capacity"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+    t.string   "event_picture_file_path"
   end
+
+  create_table "events_users", :id => false, :force => true do |t|
+    t.integer "event_id"
+    t.integer "user_id"
+  end
+
+  add_index "events_users", ["event_id"], :name => "index_events_users_on_event_id"
+  add_index "events_users", ["user_id"], :name => "index_events_users_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"
