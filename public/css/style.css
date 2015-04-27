@@ -17,7 +17,9 @@ html {
 }
 
 #tf-home .container { width: 1500px }
-#tf-home .extra-padding { padding-left: 260px }
+#tf-home .extra-padding {
+    padding-left: 200px;
+}
 h1 {
     font-weight: 900;
     text-transform: uppercase;
@@ -159,7 +161,7 @@ nav.shrink .navbar-brand img{
 /* Home Style */
 #tf-home {
     background: url(../img/zac&abby.jpg);
-    background-size: cover;
+    background-size: 100% auto;
     background-position: 0 90px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -170,10 +172,13 @@ nav.shrink .navbar-brand img{
     background-attachment: fixed;
 }
 #tf-home h1 {
-    color: white; 
+    color: white;
     font-size: 60px;
 }
 #tf-home p { color: white }
+#tf-home .vw-font h1 { font-size: 3.4vw; }
+#tf-home .vw-font p { font-size: 1.3vw; }
+
 .content-heading p.lead { margin-bottom: 80px }
 a.goto-btn {
     font-size: 18px;
