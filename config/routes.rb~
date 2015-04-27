@@ -16,9 +16,12 @@ Forging::Application.routes.draw do
   match '/inspiration', :to => 'home_page#inspiration'
   match '/management_team', :to => 'home_page#management_team'
   match '/sign_up', :to => 'home_page#sign_up'
+  match '/sign_in', :to => 'home_page#sign_in'
+  match '/events', :to => 'home_page#events'
 
 
-
+  post '/register_for_event', :to => 'users#register_for_event'
+  get '/my_events', :to => 'users#my_events'
 
 
   get 'auth/:provider/callback' => 'sessions#create', :as => 'login'
