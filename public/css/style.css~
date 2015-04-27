@@ -155,7 +155,7 @@ nav.shrink .navbar-brand img{
 #tf-header .breadcrumb > li a { color: #ffffff }
 /* Home Style */
 #tf-home {
-    background: url(../img/0.jpg);
+    background: url(../img/zac&abby.jpg);
     background-size: cover;
     background-position: 0 90px;
     background-attachment: fixed;

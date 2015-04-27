@@ -166,7 +166,11 @@ nav.shrink .navbar-brand img{
     padding: 20% 0;
     background-attachment: fixed;
 }
-#tf-home h1 { color: #4DA848 }
+#tf-home h1 {
+    color: white; 
+    font-size: 60px;
+}
+#tf-home p { color: white }
 .content-heading p.lead { margin-bottom: 80px }
 a.goto-btn {
     font-size: 18px;
