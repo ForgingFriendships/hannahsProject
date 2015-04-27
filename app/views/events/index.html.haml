@@ -97,7 +97,7 @@
                 %td= event.end_date_time.to_formatted_s(:long_ordinal)
                 %td= event.venue
                 %td= event.address
-                %td= link_to "Delete Event", events_path(event), :method :delete
+                %td= link_to "Delete Event", event, method: :destroy
         %p
         %p
         %strong
