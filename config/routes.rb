@@ -1,5 +1,7 @@
 Forging::Application.routes.draw do
 
+  get "donation/donate"
+
   # Note there is a publically visible events page and an admin only one
   # the admin only one is at '/events', or events#index at this time,
   # the public one is at 'events/all'

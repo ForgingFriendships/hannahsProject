@@ -105,13 +105,17 @@
                 %td= event.end_date_time.to_formatted_s(:long_ordinal)
                 %td= event.venue
                 %td= event.address
+
+                %td= link_to "Delete Event", event, method: :destroy
+
                 %td= event.num_persons_attending
                 %td= event.max_capacity
                 %td= button_to 'Delete event and *guest list*', event_path(event), :method => :delete, :confirm => 'EXTREMELY IMPORTANT- remember to check if there are site users who already signed up for this event.  If anyone signed up to attend this event, and you delete the event now, these persons will not be notified that the event they signed up for has been deleted.  You should get the emails for these people first, before you delete this event (so you can send out an email to them, canceling the event).  ***AFTER AN EVENT HAS BEEN DELETED, THERE IS NO WAY TO ACCESS THE EMAILS AND NAMES OF THE PEOPLE WHO REGISTERED TO ATTEND THAT EVENT.***                                                                                                                      Click CANCEL to do nothing.  Click OK to go ahead and delete guest list and event.'
+
         %p
         %p
         %strong
-          = link_to 'Add New Event', new_event_path
+         
 
 
 
