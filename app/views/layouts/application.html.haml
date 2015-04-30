@@ -56,16 +56,7 @@
               
             - if !(@current_user)
               %li.dropdown
-                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
-                  Sign-Up/Login
-                  %span.caret
-                    %ul.dropdown-menu{:role => "menu"}
-                      %li
-                        %a{:href => "/auth/twitter"} Via Twitter
-                      %li
-                        %a{:href => "/auth/facebook"} Via Facebook
-                      %li
-                        %a{:href => "/auth/google_oauth2"} Via Google
+                %a.btn.btn-primary.tf-btn.color{:button => "", :href => "/sign_in.html", :type => "button"} Sign In
             - else
               %li.dropdown
                 %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}

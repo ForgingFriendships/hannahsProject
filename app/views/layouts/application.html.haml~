@@ -36,21 +36,13 @@
 
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
-                Program
+                About Us
                 %span.caret
                   %ul.dropdown-menu{:role => "menu"}
                     %li
-                      %a{:href => "/program"} About
+                      %a{:href => "/program"} About Forging Friendships
                     %li
                       %a{:href => "/events_all"} Events
-            %li.dropdown/
-              
-
-            %li.dropdown
-              %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
-                Story
-                %span.caret
-                  %ul.dropdown-menu{:role => "menu"}
                     %li
                       %a{:href => "/inspiration"} Inspiration
                     %li
@@ -64,16 +56,7 @@
               
             - if !(@current_user)
               %li.dropdown
-                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
-                  Sign-Up/Login
-                  %span.caret
-                    %ul.dropdown-menu{:role => "menu"}
-                      %li
-                        %a{:href => "/auth/twitter"} Via Twitter
-                      %li
-                        %a{:href => "/auth/facebook"} Via Facebook
-                      %li
-                        %a{:href => "/auth/google_oauth2"} Via Google
+                %a.btn.btn-primary.tf-btn.color{:button => "", :href => "/sign_up.html", :type => "button"} Sign Up
             - else
               %li.dropdown
                 %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
