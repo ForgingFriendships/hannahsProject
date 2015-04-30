@@ -62,7 +62,7 @@
                     </div><!-- End Left Column -->
                     
                     
-                    <div class="col-md-6 extra-padding vw-font"><!-- Start Right column -->
+                    <div class="col-md-6 vw-font"><!-- Start Right column -->
                         <h1>Friendship.<br>For everyone.</h1>
                         <p>One of the biggest barriers facing<br>children with disabilities is often<br>found in the behavior of others; we're<br>here to change that.</p>
 		    <a href="/sign_up.html" button type="button" class="btn btn-primary tf-btn color">Sign Up</a>
@@ -79,7 +79,6 @@
             <div class="content-heading text-center">
                 <h1>How <img src="img/favicon.png" alt="ff icon"/> Works</h1>
             </div>
-            <br>
             <br>
             <br>
             <div class="row">
