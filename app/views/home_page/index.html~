@@ -1,3 +1,7 @@
+hannahsProject/app/views/home_page/index.html
+Kent Saeteurn 16 hours ago fixed padding issues; decreases amount of white space under bg img
+2 contributors @dianangyn @ajsaavedra
+RawBlameHistory    169 lines (140 sloc)  7.779 kb
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -77,11 +81,7 @@
     <div id="tf-intro">
         <div class="container"> <!-- container -->
             <div class="content-heading text-center">
-<<<<<<< HEAD
-                <h1>How <img src="img/favicon.png" class="img-responsive" alt="..."> Works</h1>
-=======
-                <h1>How <img src="img/favicon.png" alt="ff icon"/> Works</h1>
->>>>>>> 24263fda6075b46b7c19bf9509a9f54046bb6fe0
+                <h1>How <img src="img/logo-min-w.png" alt="ff icon"/> Works</h1>
             </div>
             <br>
             <br>
