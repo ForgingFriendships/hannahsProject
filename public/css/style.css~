@@ -163,7 +163,7 @@ nav.shrink .navbar-brand img{
 /* Home Style */
 #tf-home {
     background: url(../img/zac&abby.jpg);
-    background-size: cover;
+    background-size: 100% auto;
     background-position: 0 90px;
     background-attachment: local;
     background-repeat: no-repeat;
