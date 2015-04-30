@@ -41,11 +41,12 @@ class EventsController < ApplicationController
 
   def create
     @event_creation_params = params[:event]
-    # Ensure there is a maximum limit on people who may attend event...
-    # and that the limit was given as a Fixnum integer
-    if (@event_creation_params[:max_capacity] == nil) || (@event_creation_params[:max_capacity].class != Fixnum)
-      @event_creation_params[:max_capacity] = 0
-    end
+
+    # Ensure there is a maximum capacity on people who may attend event...
+    # if no max was given or if an invalid value given (since on the form to
+    # make new events, max capacity is a text/string box), then set max
+    # capacity to zero.... all of this handled correctly by ruby method "to_i"
+    @event_creation_params[:max_capacity] = @event_creation_params[:max_capacity].to_i
 
     # Ensure you don't start a new event with "nil" people attending (this
     # causes errors down the line, nor with a negative number of people
@@ -56,7 +57,8 @@ class EventsController < ApplicationController
     end
 
     @event = Event.create!(@event_creation_params)
-    flash[:notice] = "#{@event.event_name} was successfully created."
+    flash[:notice] = @temp
+    #flash[:notice] = "#{@event.event_name} was successfully created."
     redirect_to events_path
   end
 
