@@ -42,21 +42,19 @@
                     %li
                       %a{:href => "/program"} About Forging Friendships
                     %li
-                      %a{:href => "/events_all"} Events
-                    %li
                       %a{:href => "/inspiration"} Inspiration
                     %li
                       %a{:href => "/management_team"} Management Team
             %li.dropdown/
             
             %li
-              %a{:href => "/donation/donate"} Donate
+              %a{:href => "/events_all"} Events
             %li
               %a{:href => "/contact"} Contact
               
             - if !(@current_user)
               %li.dropdown
-                %a.btn.btn-primary.tf-btn.color{:button => "", :href => "/sign_up.html", :type => "button"} Sign Up
+                %a.btn.btn-primary.tf-btn.color{:button => "", :href => "/sign_in.html", :type => "button"} Sign In
             - else
               %li.dropdown
                 %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" =>"dropdown", :role => "button"}
