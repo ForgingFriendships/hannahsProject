@@ -72,8 +72,8 @@
             <br><br><br>
             All Events
             <br><br><br>
-            %p
-              WARNING:  Choosing to "delete" an event should rarely be done.  The guest list for that event will be deleted along with the event.  The guest list contains the names and emails of event attendees.  You likely would want to send an event cancellation email out before cancelling an event.  However, if you delete an event below, the guest list (with guest emails) is deleted too, and you will have *no way* of contacting all the people who registered to attend the event.  The guest list (and emails of attendees) should be looked at before an event is deleted.
+          %h4
+            WARNING:  Deleting an event also deletes the guest list.  Users who registered to attend will not know the event was canceled.  Furthermore, since the guest list (with guest emails) was deleted, you will have no way to reach out to attendees to tell them the event was canceled.   Be sure to get the guest email list and send your own "event canceled" emails out, *before* deleting an event.
 
 
 
@@ -106,12 +106,9 @@
                 %td= event.end_date_time.to_formatted_s(:long_ordinal)
                 %td= event.venue
                 %td= event.address
-
-                %td= link_to "Delete Event", event, method: :destroy
-
                 %td= event.num_persons_attending
                 %td= event.max_capacity
-                %td= button_to 'Delete event and *guest list*', event_path(event), :method => :delete, :confirm => 'EXTREMELY IMPORTANT- remember to check if there are site users who already signed up for this event.  If anyone signed up to attend this event, and you delete the event now, these persons will not be notified that the event they signed up for has been deleted.  You should get the emails for these people first, before you delete this event (so you can send out an email to them, canceling the event).  ***AFTER AN EVENT HAS BEEN DELETED, THERE IS NO WAY TO ACCESS THE EMAILS AND NAMES OF THE PEOPLE WHO REGISTERED TO ATTEND THAT EVENT.***                                                                                                                      Click CANCEL to do nothing.  Click OK to go ahead and delete guest list and event.'
+                %td= button_to 'Delete event and *guest list*', event_path(event), :method => :delete, :confirm => 'EXTREMELY IMPORTANT- remember to check if there are site users who already signed up for this event.  Reload this page to get latest info, then check the number of persons registered to attend the event.  "Event canceled" emails do not automatically go out to these people.  Do not delete this event before planning how to send your own "event canceled" notice out to everyone.  As soon as you delete this event, you will lose the guest list storing the email addressed of all the people attending and will have no way to contact them.***                                                                                                                      To leave the event in place, click the CANCEL button below.  Click the OK button to go ahead and delete the event and its guest list.'
 
         %p
         %p
