@@ -17,8 +17,13 @@ Forging::Application.routes.draw do
   match '/index', :to => 'home_page#index'
   match '/inspiration', :to => 'home_page#inspiration'
   match '/management_team', :to => 'home_page#management_team'
-  match '/sign_up', :to => 'home_page#sign_up'
-  match '/sign_in', :to => 'home_page#sign_in'
+  #match '/sign_up', :to => 'home_page#sign_up'
+  get '/sign_up', :to => 'users#new'
+  post '/sign_up', :to => 'users#create', :as => 'sign_up'
+  #match '/sign_in', :to => 'home_page#sign_in'
+  get '/sign_in', :to => 'sessions#new'#, :as => 'login_user'
+  post '/sign_in', :to => 'sessions#create', :as => 'login_user'
+
 
 
   post '/register_for_event', :to => 'users#register_for_event'

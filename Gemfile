@@ -8,7 +8,17 @@ gem 'haml'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails'
 end
+
+group :test do
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'rspec'
+end
+
+#password encryption
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :production do
   gem 'pg'
