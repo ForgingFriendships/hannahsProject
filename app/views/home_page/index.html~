@@ -81,7 +81,7 @@ RawBlameHistory    169 lines (140 sloc)  7.779 kb
     <div id="tf-intro">
         <div class="container"> <!-- container -->
             <div class="content-heading text-center">
-                <h1>How <img src="img/logo-min-w.png" alt="ff icon"/> Works</h1>
+                <h1>How <img src="img/logo-tiny-w.png" alt="ff icon"/> Works</h1>
             </div>
             <br>
             <br>
